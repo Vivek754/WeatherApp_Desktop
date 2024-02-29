@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="flexContainer">
+        <div class="flexBox1">
+            <div>
+                <ion-icon name="location-outline" style="font-size: 30px; margin-right: 35px;"></ion-icon>
+                <!-- <span style="font-size: 50px;" id="city" contenteditable="true">Delhi</span> -->
+                <input type="text" name="" id="city" placeholder="Search City" autocomplete="off" spellcheck="false">
+            </div>
+            <p style="font-size: 30px; margin-left: 70px;"> <span id="month">September</span> <span id="date">15
+                </span><br> <span id="day">Monday</span></p>
+            <div id="flexBox1Info">
+                <img src="./images/thermometer.png" alt="" id="thermometer">
+                <span style="font-size: 125px;" id="temp">25</span> <br>
+                <span style="font-size: 30px; margin-left: 70px;">Feels like <span id="feel"></span></span>
+            </div>
+        </div>
+        <div class="flexBox2">
+            <img src="" alt="" id="mainIcon">
+        </div>
+        <div class="flexBox3" id="flexBox3">
+            <div class="infoFlex">
+                <img src="./images/sun rise.png" alt="" class="sunrise">
+                <span style="font-size: 30px ;" id="tempMax"></span>
+            </div>
+            <div class="infoFlex">
+                <img src="./images/sunset.png" alt="" class="sunrise">
+                <span style="font-size: 30px ;" id="tempMin"></span>
+            </div>
+            <div class="infoFlex">
+                <img src="./images/drop.png" alt="" class="mainIconsforSec3">
+                <span style="font-size: 30px ;" id="humidity"></span>
+            </div>
+            <div class="infoFlex">
+                <img src="./images/wind info.png" alt="" class="mainIconsforSec3">
+                <span style="font-size: 30px ;" id="wind"></span>
+            </div>
+            <div class="infoFlex">
+                <img src="./images/arrow.png" alt="" class="mainIconsforSec3">
+                <span style="font-size: 30px ;" id="deg"></span>
+            </div>
+            <div class="infoFlex">
+                <img src="./images/up arrow.png" alt="" class="mainIconsforSec3">
+                <span style="font-size: 30px ;" id="pressure"></span>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
